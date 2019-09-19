@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Programming Language Suggester</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Which programming language is right for you!</h1>
+      <form id="programming-suggester">
+        <div class="form-group">
+          <label for="name">What is your name?: </label>
+          <input id="name" class="form-control" type="text">
+        </div>
+
+        <p>What is your favorite animal?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="animal" value="dog" checked>
+            Dog
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="animal" value="cat">
+            Cat
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="animal" value="bird">
+            Bird
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="animal" value="no-animal">
+            I don't like animals
+          </label>
+        </div>
+        <!-- next question -->
+        <p>What is your favorite season?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="season" value="summer" checked>
+            Summer
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="season" value="winter">
+            Winter
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="season" value="spring">
+            Spring
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="season" value="fall">
+            Fall
+          </label>
+        </div>
+        <!-- next question -->
+
+        <p>What is your favorite holiday?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="holiday" value="christmas" checked>
+            Christmas
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="holiday" value="thanksgiving">
+            Thanksgiving
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="holiday" value="halloween">
+            Halloween
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="holiday" value="st-patrick">
+            St. Patricks day
+          </label>
+        </div>
+        <!-- </div> -->
+        <button type="submit" class="btn btn-primary">Go!</button>
+      </form>
+
+      <div class="c-sharp">
+        <p><span class="name"></span>, you should learn C#</p>
+      </div>
+      <div class="python">
+        <p><span class="name"></span>, you should learn python</p>
+      </div>
+      <div class="ruby">
+          <p><span class="name"></span>, you should learn ruby</p>
+        </div>
+      <div id="output">
+
+
+      </div>
+    </div>
+  </body>
+</html>
