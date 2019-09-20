@@ -1,31 +1,26 @@
-function python(animalInput, seasonInput, holidayInput, heroInput, getAwayInput){
+function python(para1, para2, para3, para4, para5){
   var threeOfFive = 0;
-  var pythonWins = false;
 
-  if (animalInput === "1") {
+  if (para1 === "1") {
     threeOfFive ++;
   }
-  if (seasonInput === "1") {
+  if (para2 === "1") {
     threeOfFive ++;
   }
-  if (holidayInput === "1") {
+  if (para3 === "1") {
     threeOfFive ++;
   }
-  if (heroInput === "1") {
+  if (para4 === "1") {
     threeOfFive ++;
   }
-  if (getAwayInput === "1") {
+  if (para5 === "1") {
     threeOfFive ++;
   }
-  if (threeOfFive >= 3){
-    pythonWins === true
-  }
-  return pythonWins;
+  return threeOfFive;
 };
 
 function ruby(para1, para2, para3, para4, para5){
   var threeOfFive = 0;
-  var rubyWins = false;
 
   if (para1 === "2") {
     threeOfFive ++;
@@ -45,14 +40,50 @@ function ruby(para1, para2, para3, para4, para5){
   return threeOfFive;
 };
 
-  // if (threeOfFive >= 3){
-  //   rubyWins === true
-  // }
-  // if (rubyWins === true){
-  //   return rubyWins
-//   }
-//
-// };
+function cSharp(para1, para2, para3, para4, para5){
+  var threeOfFive = 0;
+
+  if (para1 === "3") {
+    threeOfFive ++;
+  }
+  if (para2 === "3") {
+    threeOfFive ++;
+  }
+  if (para3 === "3") {
+    threeOfFive ++;
+  }
+  if (para4 === "3") {
+    threeOfFive ++;
+  }
+  if (para5 === "3") {
+    threeOfFive ++;
+  }
+  return threeOfFive;
+};
+
+function javascript(para1, para2, para3, para4, para5){
+  var threeOfFive = 0;
+
+  if (para1 === "4") {
+    threeOfFive ++;
+  }
+  if (para2 === "4") {
+    threeOfFive ++;
+  }
+  if (para3 === "4") {
+    threeOfFive ++;
+  }
+  if (para4 === "4") {
+    threeOfFive ++;
+  }
+  if (para5 === "4") {
+    threeOfFive ++;
+  }
+  return threeOfFive;
+};
+
+
+
 
 
 
@@ -74,12 +105,20 @@ $(document).ready(function() {
 
     if (ruby(animalInput, seasonInput, holidayInput, heroInput, getAwayInput) >= 3) {
       $(".ruby").show();
-      $('.name').text(nameInput);
+
+    } else if (python(animalInput, seasonInput, holidayInput, heroInput, getAwayInput) >= 3) {
+      $(".python").show();
+
+    } else if (cSharp(animalInput, seasonInput, holidayInput, heroInput, getAwayInput) >= 3) {
+      $(".c-sharp").show();
+
+    } else if (javascript(animalInput, seasonInput, holidayInput, heroInput, getAwayInput) >= 3){
+      $(".javascript").show();
+    } else {
+      $(".go").show();
     }
 
     $('.name').text(nameInput);
-
-    alert("does this make it?")
 
 
   });
