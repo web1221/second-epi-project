@@ -1,28 +1,30 @@
-function python(animal, season, holiday, hero, getAway){
+
+
+function python(animalInput, seasonInput, holidayInput, heroInput, getAwayInput){
   var threeOfFive = 0;
   var pythonWins = false;
 
-  if (animalInput === 1) {
+  if (animalInput === "1") {
     threeOfFive ++;
   }
-  if (seasonInput === 1) {
+  if (seasonInput === "1") {
     threeOfFive ++;
   }
-  if (holidayInput === 1) {
+  if (holidayInput === "1") {
     threeOfFive ++;
   }
-  if (heroInput === 1) {
+  if (heroInput === "1") {
     threeOfFive ++;
   }
-  if (getAwayInput === 1) {
+  if (getAwayInput === "1") {
     threeOfFive ++;
   }
   if (threeOfFive >= 3){
     pythonWins === true
   }
   return pythonWins;
-}
-alert("hi")
+};
+
 
 $(document).ready(function() {
   $('form#programming-suggester').submit(function(event) {
@@ -32,13 +34,16 @@ $(document).ready(function() {
     var holidayInput = $("input:radio[name=holiday]:checked").val();
     var heroInput = $("input:radio[name=hero]:checked").val();
     var getAwayInput = $("input:radio[name=get-away]:checked").val();
-
+    // console.log(animalInput);
+    // console.log(seasonInput);
+    // console.log(holidayInput);
+    // console.log(heroInput);
+    // console.log(getAwayInput);
     if (python(animalInput, seasonInput, holidayInput, heroInput, getAwayInput) === true) {
       $('.python').show();
     }
     $('.name').text(nameInput);
-    $('#output').show();
-  event.preventDefault();
-
+    event.preventDefault();
+    alert("does this make it?")
   });
 });
