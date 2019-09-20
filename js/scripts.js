@@ -23,33 +23,36 @@ function python(animalInput, seasonInput, holidayInput, heroInput, getAwayInput)
   return pythonWins;
 };
 
-function ruby(animalInput, seasonInput, holidayInput, heroInput, getAwayInput){
+function ruby(para1, para2, para3, para4, para5){
   var threeOfFive = 0;
   var rubyWins = false;
 
-  if (animalInput === "2") {
+  if (para1 === "2") {
     threeOfFive ++;
   }
-  if (seasonInput === "2") {
+  if (para2 === "2") {
     threeOfFive ++;
   }
-  if (holidayInput === "2") {
+  if (para3 === "2") {
     threeOfFive ++;
   }
-  if (heroInput === "2") {
+  if (para4 === "2") {
     threeOfFive ++;
   }
-  if (getAwayInput === "2") {
+  if (para5 === "2") {
     threeOfFive ++;
   }
-  if (threeOfFive >= 3){
-    rubyWins === true
-  }
-  if (rubyWins === true){
-    $('.ruby').show();
-  }
-
+  return threeOfFive;
 };
+
+  // if (threeOfFive >= 3){
+  //   rubyWins === true
+  // }
+  // if (rubyWins === true){
+  //   return rubyWins
+//   }
+//
+// };
 
 
 
@@ -68,8 +71,11 @@ $(document).ready(function() {
     console.log(holidayInput);
     console.log(heroInput);
     console.log(getAwayInput);
-    $('.ruby').show();
 
+    if (ruby(animalInput, seasonInput, holidayInput, heroInput, getAwayInput) >= 3) {
+      $(".ruby").show();
+      $('.name').text(nameInput);
+    }
 
     $('.name').text(nameInput);
 
