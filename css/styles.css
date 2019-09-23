@@ -1,3 +1,14 @@
+body {
+  background-color: #C8CECA;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
 .cSharp, .ruby, .javascript, .python, .go {
   display: none;
 }
@@ -10,34 +21,43 @@
 
 }
 
-body {
-  background-color: #A4A9AD;
-}
-
-h1 {
-  text-align: center;
-}
-
 .btn {
-  margin-bottom: 50px;
-  margin-left: 270px;
+  margin-left: 40%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
- .form-control {
+.form-control {
    width: 30%;
+   margin-left: 35%;
+ }
+
+.form-group{
+
  }
 
 .radio {
-  text-align: center;
-}
+   text-align: left;
+   margin-left: 40%;
+ }
+
+.result-text {
+
+ }
+
+#name-box {
+   margin-left: 43%;
+ }
 
 #output {
   display: none;
-  margin: 10px;
-  padding: 50px;
+  margin-left: 20%;
+  padding: 20px;
   font-size: 30px;
   text-align: center;
   background-color: white;
   border: 1px dotted black;
+  border-radius: 50px;
+  width: 60%;
 
 }
