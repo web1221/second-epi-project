@@ -17,10 +17,10 @@ This website is a quiz that the user will answer questions and receive an output
 
 
 ## Support and contact details
-If you run into any problems you can email me at angelaweber95@hotmail.com 
+If you run into any problems you can email me at angelaweber95@hotmail.com
 
 ## Technologies Used
 To create this page I used HTML, CSS, JavaScript.  I also used tools like bootstrap and jQuery to style and add functionality to the page.
 
 ### License
-Copyright (c) 2015 Angela Weber
+Copyright (c) 2019 Angela Weber
