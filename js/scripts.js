@@ -105,17 +105,37 @@ $(document).ready(function() {
 
     if (ruby(animalInput, seasonInput, holidayInput, heroInput, getAwayInput) >= 3) {
       $(".ruby").show();
+      $(".python").hide();
+      $(".javascript").hide();
+      $(".cSharp").hide();
+      $(".go").hide();
 
     } else if (python(animalInput, seasonInput, holidayInput, heroInput, getAwayInput) >= 3) {
       $(".python").show();
+      $(".ruby").hide();
+      $(".javascript").hide();
+      $(".cSharp").hide();
+      $(".go").hide();
 
     } else if (cSharp(animalInput, seasonInput, holidayInput, heroInput, getAwayInput) >= 3) {
-      $(".c-sharp").show();
+      $(".cSharp").show();
+      $(".ruby").hide();
+      $(".javascript").hide();
+      $(".python").hide();
+      $(".go").hide();
 
     } else if (javascript(animalInput, seasonInput, holidayInput, heroInput, getAwayInput) >= 3){
       $(".javascript").show();
+      $(".ruby").hide();
+      $(".python").hide();
+      $(".cSharp").hide();
+      $(".go").hide();
     } else {
       $(".go").show();
+      $(".ruby").hide();
+      $(".python").hide();
+      $(".cSharp").hide();
+      $(".javascript").hide();
     }
 
     $('.name').text(nameInput);
