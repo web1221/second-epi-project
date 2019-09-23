@@ -1,3 +1,16 @@
 .cSharp, .ruby, .javascript, .python, .go {
   display: none;
 }
+
+.jumbotron {
+  text-align: center;
+  margin: 40px;
+}
+
+.radio {
+  text-align: center;
+}
+
+input {
+  padding: 50px;
+}
