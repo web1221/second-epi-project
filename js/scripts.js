@@ -104,7 +104,8 @@ $(document).ready(function() {
     console.log(getAwayInput);
 
     if (ruby(animalInput, seasonInput, holidayInput, heroInput, getAwayInput) >= 3) {
-      $(".ruby").show();
+      $(".ruby").show()
+      $("#output").show();
       $(".python").hide();
       $(".javascript").hide();
       $(".cSharp").hide();
@@ -112,6 +113,7 @@ $(document).ready(function() {
 
     } else if (python(animalInput, seasonInput, holidayInput, heroInput, getAwayInput) >= 3) {
       $(".python").show();
+      $("#output").show();
       $(".ruby").hide();
       $(".javascript").hide();
       $(".cSharp").hide();
@@ -119,6 +121,7 @@ $(document).ready(function() {
 
     } else if (cSharp(animalInput, seasonInput, holidayInput, heroInput, getAwayInput) >= 3) {
       $(".cSharp").show();
+      $("#output").show();
       $(".ruby").hide();
       $(".javascript").hide();
       $(".python").hide();
@@ -126,12 +129,14 @@ $(document).ready(function() {
 
     } else if (javascript(animalInput, seasonInput, holidayInput, heroInput, getAwayInput) >= 3){
       $(".javascript").show();
+      $("#output").show();
       $(".ruby").hide();
       $(".python").hide();
       $(".cSharp").hide();
       $(".go").hide();
     } else {
       $(".go").show();
+      $("#output").show();
       $(".ruby").hide();
       $(".python").hide();
       $(".cSharp").hide();
@@ -140,6 +145,11 @@ $(document).ready(function() {
 
     $('.name').text(nameInput);
 
+
+  });
+
+  $('.btn').click(function() {
+    $('#output').fadeIn(10000);
 
   });
 });

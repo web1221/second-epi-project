@@ -5,12 +5,39 @@
 .jumbotron {
   text-align: center;
   margin: 40px;
+  padding: 40px;
+  background-color: #20A39E;
+
 }
+
+body {
+  background-color: #A4A9AD;
+}
+
+h1 {
+  text-align: center;
+}
+
+.btn {
+  margin-bottom: 50px;
+  margin-left: 270px;
+}
+
+ .form-control {
+   width: 30%;
+ }
 
 .radio {
   text-align: center;
 }
 
-input {
+#output {
+  display: none;
+  margin: 10px;
   padding: 50px;
+  font-size: 30px;
+  text-align: center;
+  background-color: white;
+  border: 1px dotted black;
+
 }
