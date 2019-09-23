@@ -1,5 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #C8CECA;
+  background-color: #EEEDEF;
 }
 
 h1 {
@@ -17,14 +21,31 @@ h1 {
   text-align: center;
   margin: 40px;
   padding: 40px;
-  background-color: #20A39E;
+  background-color: #95D639;
 
 }
 
 .btn {
-  margin-left: 40%;
+  margin-left: 45%;
   margin-top: 20px;
   margin-bottom: 20px;
+  color: white;
+  background-color: #7F0CB5;
+  border: 1px solid #7F0CB5;
+}
+
+.btn:hover, .btn:active, .btn:focus{
+  color: white;
+  background-color: #540877;
+  border: 1px solid #540877;
+  outline: 0;
+}
+
+.btn:active, .btn:focus{
+  color: white;
+  background-color: #7F0CB5;
+  border: 1px solid #7F0CB5;
+  outline: 0;
 }
 
 .form-control {
@@ -37,12 +58,14 @@ h1 {
  }
 
 .radio {
-   text-align: left;
-   margin-left: 40%;
+   text-align: center;
+   margin-left: %;
  }
 
 .result-text {
-
+  text-decoration: underline;
+  font-style: oblique;
+  color: #830DBA;
  }
 
 #name-box {
@@ -52,12 +75,16 @@ h1 {
 #output {
   display: none;
   margin-left: 20%;
+  margin-bottom: 5%;
   padding: 20px;
+  color: white;
   font-size: 30px;
   text-align: center;
   background-color: white;
-  border: 1px dotted black;
+  border: 3px groove gray;
   border-radius: 50px;
   width: 60%;
+  background-image: linear-gradient(#EEE82C, #91CB3E);
+
 
 }

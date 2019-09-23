@@ -97,11 +97,6 @@ $(document).ready(function() {
     var holidayInput = $("input:radio[name=holiday]:checked").val();
     var heroInput = $("input:radio[name=hero]:checked").val();
     var getAwayInput = $("input:radio[name=get-away]:checked").val();
-    console.log(animalInput);
-    console.log(seasonInput);
-    console.log(holidayInput);
-    console.log(heroInput);
-    console.log(getAwayInput);
 
     if (ruby(animalInput, seasonInput, holidayInput, heroInput, getAwayInput) >= 3) {
       $(".ruby").show()
@@ -149,7 +144,7 @@ $(document).ready(function() {
   });
 
   $('.btn').click(function() {
-    $('#output').fadeIn(10000);
+    $('#output').fadeIn(5000);
 
   });
 });
